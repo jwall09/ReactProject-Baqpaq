@@ -1,0 +1,1 @@
+This is a dummy eCommerce site built while learning ReactJS
