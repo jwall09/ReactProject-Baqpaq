@@ -1,5 +1,5 @@
-import CategoryItem from './components/category-item/category-item.component';
-import './categories.styles.scss'
+import CategoryMenu from './components/categories-menu/categories-menu.component';
+
 
 // This is the base for the home page of the website
 const App = () => {
@@ -34,15 +34,9 @@ const App = () => {
     }
   ];
 
-  // Using map() we are able to loop through the 
-  // array above to build the different cards while
-  // only having to type the syntax once
+
   return (
-    <div className="categories-container">
-      {categories.map((category) => (
-        <CategoryItem key = {category.id} category={category} />
-      ))};
-    </div>
+    <CategoryMenu categories={ categories }/>
   );
 }
 
