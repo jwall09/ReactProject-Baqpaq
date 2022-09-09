@@ -1,5 +1,6 @@
 import './category-item.styles.scss'
 
+// this is the individual cards for each subject
 const CategoryItem = ({ category }) => {
     
     const { imageUrl, title } = category;
