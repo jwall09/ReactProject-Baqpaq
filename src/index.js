@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Wrapping Browser Router around the App component 
+// allows you to be able to access the abilities of
+// Browser Routing inside the App component
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
