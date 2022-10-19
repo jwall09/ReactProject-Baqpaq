@@ -13,6 +13,11 @@ import { Fragment } from 'react';
 // as an anchor tag 
 import { Outlet, Link } from 'react-router-dom';
 
+// importing my logo svg
+import { ReactComponent as BaqpaqLogo } from '../../assets/LRUx4h01.svg'
+// imports the navigation style
+import './navigation.styles.scss';
+
 
 const Navigation = () => {
     return (
@@ -20,7 +25,7 @@ const Navigation = () => {
       <Fragment>
         <div className='navigation'>
             <Link className='logo-container' to='/'>
-                <div>Logo</div>
+                <BaqpaqLogo />
             </Link>
             <div className='nav-links-container'>
                 <Link className='nav-link' to='/shop'>
